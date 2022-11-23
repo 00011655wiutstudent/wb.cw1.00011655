@@ -1,54 +1,95 @@
-
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 body{
-  background-color: rgb(214, 239, 255);
-  width:100%;
-  margin: 0% 0%;
-  padding: 0%;
+  margin:0;
 }
 nav{
-    background-color: white;
-}
-nav img{
-    float: left;
-    width: 150px;
-    padding-left: 50px;
-    position: relative;
-}
-nav p{
-    float: left;
-    font-size: small;
-    vertical-align:middle;
-    line-height: 15px;
-    padding-top: 25px;
-    padding-left: 30px;
-    text-align: center;
-}
-nav ul{
-    margin-left: 250px;
-    display: inline-block;
-    margin-right: 50px;
+  overflow: hidden;
+  background-color: #e7e7e7;
+  padding: 0px 10px;
+  margin:0;
 }
 
-nav li{
-    font-size: 20px;
-    list-style-type: none;
-    float: left;
-    line-height: 70px;
-    padding-right: 45px;
-    vertical-align: middle;
-    box-sizing: border-box;
+nav a, nav li{
+  list-style-type: none;
+  margin: 0;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 10px;
 }
-nav a{
-    text-decoration: none;
-    color: black;
-}
+
 nav a:hover{
-    color: red;
-    text-align: center;
+  background-color: #ddd;
+  color: black;
 }
-nav li:hover{
-border-bottom: 3px solid red;
+
+nav a.active{
+  background-color: red;
+  color: white;
+}
+
+nav .login-container {
+  float: right;
+}
+
+nav input[type=text] {
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 17px;
+  border: none;
+  width: 150px;
+  border-radius: 10px;
+  line-height: 25px;
+}
+
+nav .login-container button {
+  float: right;
+  padding: 6px;
+  line-height: 25px;
+  margin-top: 20px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+nav .login-container button:hover {
+  background: red;
+}
+
+@media screen and (max-width: 800px){
+  nav a, nav li {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .login-container {
+    float: none;
+  }
+  nav a, nav li, nav input[type=text], nav .login-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  nav input[type=text] {
+    border: 1px solid #ccc;
+  }
 }
 /* here begins slides css */
 .slideshow {
