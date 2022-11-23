@@ -3,18 +3,19 @@
 body{
   background-color: rgb(214, 239, 255);
   width:100%;
-  margin: 0%;
+  margin: 0% 0%;
+  padding: 0%;
 }
-header{
+nav{
     background-color: white;
 }
-header img{
+nav img{
     float: left;
     width: 150px;
     padding-left: 50px;
     position: relative;
 }
-header p{
+nav p{
     float: left;
     font-size: small;
     vertical-align:middle;
@@ -23,13 +24,13 @@ header p{
     padding-left: 30px;
     text-align: center;
 }
-header ul{
+nav ul{
     margin-left: 250px;
     display: inline-block;
     margin-right: 50px;
 }
 
-header li{
+nav li{
     font-size: 20px;
     list-style-type: none;
     float: left;
@@ -38,34 +39,18 @@ header li{
     vertical-align: middle;
     box-sizing: border-box;
 }
-header a{
+nav a{
     text-decoration: none;
     color: black;
 }
-header a:hover{
+nav a:hover{
     color: red;
     text-align: center;
 }
-header li:hover{
+nav li:hover{
 border-bottom: 3px solid red;
 }
-
-
-.dot:hover{
-    background-color: blueviolet;
-}
-
-.fade{
-    animation-duration: fade;
-    animation-duration: 2s;
-}
-
-@keyframes fade{
-    from {opacity: .4;}
-    to{opacity: 1;}
-}
-
-
+/* here begins slides css */
 .slideshow {
   position: relative;
   margin: 0 0;
@@ -100,6 +85,11 @@ border-bottom: 3px solid red;
 .next {
   right: 0;
   border-radius: 5px 0 0 5px;
+}
+
+.prev{
+  left: 0;
+  border-radius: 0 5px 5px 0;
 }
 
 .prev:hover, .next:hover {
