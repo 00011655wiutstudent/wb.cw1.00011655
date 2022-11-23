@@ -8,17 +8,20 @@
 </head>
 <body>
     <nav>
-        <a class="logo" href="/index.html" > <img src="/resources/logo.jpg" alt="To'xtaniyoz Ota"></a>
-        <p title ="This was instructed">  This website was created to fulfill Web Technology 
-            module's requirements <br> and does not represent an actual company or service
-        </p>
-        <ul>
-            <li><a href="/html/about.html">About</a></li>
-            <li><a href="/html/production.html">Production</a></li>
-            <li><a href="/html/products.html">Products</a></li>
-            <li><a href="/html/news.html">News</a></li>
-            <li><a href="/html/contact.html" target="_blank">Contacts</a></li>
+        <ul class="header">
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a class="menu" href="/html/about.html">About</a></li>
+            <li><a class="menu" href="/html/production.html">Production</a></li>
+            <li><a class="menu" href="/html/products.html">Products</a></li>
+            <li><a class="menu" href="/html/news.html">News</a></li>
+            <li><a class="menu" href="/html/contact.html" target="_blank">Contacts</a></li>
         </ul>
+        <div class="login-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Username" name="username">
+            <input type="text" placeholder="Password" name="psw">
+            <button type="submit">Login</button>
+          </form>
     </nav>
 
     <div class="slideshow">
