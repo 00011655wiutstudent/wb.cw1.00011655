@@ -1,18 +1,21 @@
 
+* {box-sizing:border-box}
+body{
+  background-color: rgb(214, 239, 255);
+  width:100%;
+  margin: 0%;
+}
 header{
     background-color: white;
 }
 header img{
-    float:left;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
+    float: left;
+    width: 150px;
     padding-left: 50px;
     position: relative;
 }
 header p{
-    float:left;
-    display: inline-block;
+    float: left;
     font-size: small;
     vertical-align:middle;
     line-height: 15px;
@@ -21,7 +24,7 @@ header p{
     text-align: center;
 }
 header ul{
-    margin-left: 300px;
+    margin-left: 250px;
     display: inline-block;
     margin-right: 50px;
 }
@@ -47,57 +50,6 @@ header li:hover{
 border-bottom: 3px solid red;
 }
 
-.slide show{
-    max-width: fit-content;
-    position: relative;
-    margin: auto;
-}
-
-.slides{
-    display: none;
-}
-
-.prev{
-    cursor: pointer;
-    position:absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -20px;
-    padding: 16px 18px;
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-    transition: 0.5s ease-in-out;
-    border-radius: 0 5px 5px 0;
-    user-select: none;
-}
-.next{
-    right: 0;
-    border-radius: 5px 0 0 5px;
-}
-.prev:hover, .next.prev:hover{
-    background-color: rgba(165, 42, 42, 0.242);
-}
-
-.slides p{
-    color:red;
-    font-size: 14px;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-}
-
-.dot{
-    text-align: center;
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin:  0 3px;
-    background-color: blue;
-    border-radius: 40%;
-    display: inline-block;
-    transition: background-color 0.5s ease-in-out;
-}
 
 .dot:hover{
     background-color: blueviolet;
@@ -111,4 +63,106 @@ border-bottom: 3px solid red;
 @keyframes fade{
     from {opacity: .4;}
     to{opacity: 1;}
+}
+
+
+.slideshow {
+  position: relative;
+  margin: 0 0;
+}
+.Slides img{
+  width:100%;
+}
+
+.img1{
+  display: inline;
+}
+.img2, .img3{
+  display:none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+  background-color: #00000063;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.607);
+}
+
+.info_1 {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -10%);
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+}
+.info_2, .info_3{
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Slides p {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 3px;
+  background-color: rgb(182, 69, 69);
+  border-radius: 25%;
+  display: inline-block;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.slide_fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
