@@ -156,3 +156,35 @@ border-bottom: 3px solid red;
   from {opacity: .4}
   to {opacity: 1}
 }
+/*the About page*/
+.sidebar img, .sidebar p{
+  margin: 0;
+  margin-top: -110px;
+  padding: 0;
+  width: 500px;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar p{
+  display: block;
+  padding-top: 150px;
+  text-align: center;
+  color: white;
+  background-color: #0000006e;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    height: 100%;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+div.content {
+  margin-left: 500px;
+  padding: 1px 16px;
+  height: 1000px;
+}
