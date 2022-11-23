@@ -1,26 +1,29 @@
-*{
-    
-}
+
 header{
     background-color: white;
 }
 header img{
-    float: left;
+    float:left;
+    display: inline-block;
     height: 100px;
     width: 100px;
     padding-left: 50px;
     position: relative;
 }
 header p{
+    float:left;
+    display: inline-block;
     font-size: small;
-    float: left;
-    padding-left: 30px;
-    padding-top: 25px;
+    vertical-align:middle;
     line-height: 15px;
+    padding-top: 25px;
+    padding-left: 30px;
     text-align: center;
 }
 header ul{
-    float:right;
+    margin-left: 300px;
+    display: inline-block;
+    margin-right: 50px;
 }
 
 header li{
@@ -29,6 +32,7 @@ header li{
     float: left;
     line-height: 70px;
     padding-right: 45px;
+    vertical-align: middle;
     box-sizing: border-box;
 }
 header a{
@@ -40,5 +44,71 @@ header a:hover{
     text-align: center;
 }
 header li:hover{
-    border-bottom: 3px solid red;
+border-bottom: 3px solid red;
+}
+
+.slide show{
+    max-width: fit-content;
+    position: relative;
+    margin: auto;
+}
+
+.slides{
+    display: none;
+}
+
+.prev{
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 16px 18px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+.prev:hover, .next.prev:hover{
+    background-color: rgba(165, 42, 42, 0.242);
+}
+
+.slides p{
+    color:red;
+    font-size: 14px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    text-align: center;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin:  0 3px;
+    background-color: blue;
+    border-radius: 40%;
+    display: inline-block;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.dot:hover{
+    background-color: blueviolet;
+}
+
+.fade{
+    animation-duration: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade{
+    from {opacity: .4;}
+    to{opacity: 1;}
 }
