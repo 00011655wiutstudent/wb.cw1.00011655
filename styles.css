@@ -6,9 +6,10 @@ body{
 }
 nav{
   overflow: hidden;
-  background-image:linear-gradient(to right, rgba(255, 0, 0, 0.423), rgb(158, 31, 31));
+  background-image:linear-gradient(to right, rgb(63, 10, 10), rgb(158, 31, 31));
   padding: 0px 10px;
   margin:0;
+  position: relative;
 }
 
 nav a, nav li{
@@ -199,35 +200,49 @@ nav .login-container button:hover {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+
 /*the About page*/
+.sidebar{
+  background-image: url(/resources/about_sidebar.jpg);
+  background-repeat: no-repeat;
+}
 .sidebar img, .sidebar p{
   margin: 0;
-  margin-top: 89px;
+  margin-top: -90px;
   padding: 0;
   width: 500px;
   position: fixed;
-  z-index: 1;
+  z-index: -10;
   height: 100%;
   overflow: auto;
 }
 .sidebar p{
   display: block;
-  padding-top: 150px;
+  padding-top: 250px;
   text-align: center;
   color: white;
   background-color: #0000006e;
-}
-@media screen and (max-width: 700px) {
-  .sidebar {
-    height: 100%;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
 }
 
 div.content {
   margin-left: 500px;
   padding: 1px 16px;
   height: 1000px;
+}
+@media screen and (max-width: 800px) {
+.sidebar img, .sidebar p {
+    position: relative;
+    margin-top: 0%;
+    height: 100%;
+    width: 100%;
+  }
+  .sidebar p{
+    position: absolute;
+    margin-top:-100%;
+    z-index: 100;
+  }
+  div.content {margin:0;
+  padding: 10;}
 }
