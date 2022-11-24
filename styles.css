@@ -3,13 +3,16 @@
 }
 h1{
   font-size: 2rem;
+  text-align: center;
 }
 h2{
   font-size: 1.5rem;
+  text-align: center;
 }
 
 p{
   font-size: 1rem;
+  text-align: center;
 }
 body{
   margin:0;
@@ -293,6 +296,36 @@ div.content {
 
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/*Products page*/
+
+table td img{
+  width: 150%;
+  margin-top: 50px;
+  border-radius: 50px;
+}
+table td{
+  text-align: center;
+  margin: 20px;
+  padding-left: 8rem;
+  padding-right:6rem;
+}
+@media screen and (max-width: 1200px) {
+  table td {padding-left: 70px; 
+    padding-right: 70px;
+  }
+  table td img{
+    width: 130%;
+  }
+}
+@media screen and (max-width: 800px) {
+  table td {padding-left:10px;   padding-right: 10px;
+  }
+  table td h2{font-size: 12px;}
+  table td img{
     width: 100%;
   }
 }
