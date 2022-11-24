@@ -4,6 +4,7 @@
 h1{
   font-size: 2rem;
   text-align: center;
+  border: 2px solid red;
 }
 h2{
   font-size: 1.5rem;
@@ -234,6 +235,7 @@ nav .login-container button:hover {
   overflow: auto;
 }
 .sidebar p{
+  font-size: 2rem;
   display: block;
   padding-top: 250px;
   text-align: center;
