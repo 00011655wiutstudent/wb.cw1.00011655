@@ -9,12 +9,12 @@
 <body>
     <nav>
         <ul class="header">
-            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a class="menu" href="/index.html">Home</a></li>
             <li><a class="menu" href="/html/about.html">About</a></li>
             <li><a class="menu" href="/html/production.html">Production</a></li>
             <li><a class="menu" href="/html/products.html">Products</a></li>
             <li><a class="menu" href="/html/news.html">News</a></li>
-            <li><a class="menu" href="/html/contact.html" target="_blank">Contacts</a></li>
+            <li><a class="active" href="/html/contact.html">Contacts</a></li>
         </ul>
         <div class="login-container">
           <form action="/action_page.php">
@@ -23,4 +23,23 @@
             <button type="submit">Login</button>
           </form>
     </nav>
+    <!--We do not have page.php so, the form does not send data anywhere -->
+    <h1>Contact Us</h1>
+    <form class="contact_form">
+      
+        <label for="fname">First Name</label>
+        <input type="text" id="name" name="firstname" placeholder="First name...">
+      
+        <label for="lname">Last Name</label>
+        <input type="text" id="surname" name="lastname" placeholder="Surname...">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Your massage..."></textarea>
+      
+        <input type="submit">
+      
+    </form>
+    <div class="contact_side">
+        <img src="/resources/contact.jpg" alt="Girl with microphone">
+    </div>
 </body>
