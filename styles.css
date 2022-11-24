@@ -50,7 +50,7 @@ nav a.active{
   color: white;
 }
 
-nav .login-container {
+nav .login {
   float: right;
 }
 
@@ -64,7 +64,7 @@ nav input[type=text] {
   line-height: 25px;
 }
 
-nav .login-container button {
+nav .login button {
   float: right;
   padding: 6px;
   line-height: 25px;
@@ -79,7 +79,7 @@ nav .login-container button {
   cursor: pointer;
 }
 
-nav .login-container button:hover {
+nav .login button:hover {
   background: rgb(0, 0, 0);
   color:white;
 }
@@ -95,10 +95,10 @@ nav .login-container button:hover {
   }
 }
 @media screen and (max-width: 600px) {
-  nav .login-container {
+  nav .login {
     float: none;
   }
-  nav a, nav li, nav input[type=text], nav .login-container button {
+  nav a, nav li, nav input[type=text], nav .login button {
     float: none;
     display: block;
     text-align: left;
